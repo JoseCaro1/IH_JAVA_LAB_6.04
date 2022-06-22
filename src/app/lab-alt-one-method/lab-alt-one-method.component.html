@@ -1,0 +1,8 @@
+<!-- Le paso el HTMLElement mediante #NOMBRE -->
+<div [ngStyle]="{'background-color':firstBg, 'color':firstColor}" #first (mouseenter)="swapElement(first)" (mouseleave)="swapElement(first)"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, perspiciatis! Quasi sit harum veritatis. Dicta vitae laudantium enim qui eum aut porro odit eius distinctio ipsa? Deserunt aliquam expedita soluta.</p></div>
+<div [ngStyle]="{'background-color':secondBg, 'color':secondColor}" #second  (mouseenter)="swapElement(second)" (mouseleave)="swapElement(second)"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat magnam quas impedit doloribus rem possimus, asperiores velit dolores, rerum perspiciatis necessitatibus dignissimos labore hic! Accusamus sint minima cumque velit?</p></div>
+<div [ngStyle]="{'background-color':thirdBg, 'color':thirdColor}" #third (mouseenter)="swapElement(third)" (mouseleave)="swapElement(third)"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias aperiam possimus, autem explicabo ad. Quasi fugit repellat, veniam tempora quae, tenetur possimus itaque explicabo harum dignissimos placeat libero quas.</p></div>
+
+
+
+<button  (click)="swap()"> Swap ColorBlind</button>
